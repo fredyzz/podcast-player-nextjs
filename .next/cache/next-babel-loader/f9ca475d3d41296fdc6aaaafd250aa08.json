@@ -1,0 +1,1 @@
+{"ast":null,"code":"const routes = require('next-routes');\n\nmodule.exports = routes().add('index').add('channel', '/:slug.:id', 'channel') //route name, xxxxxx.id, destiny page\n.add('podcast', '/:slugChannel.:idChannel/:slug.:id', 'podcast');","map":null,"metadata":{},"sourceType":"script"}

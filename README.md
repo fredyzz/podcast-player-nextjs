@@ -1,6 +1,10 @@
 # Podcast App using AudioBoom API
 
-[live demo](https://fredyzz.github.io/podcast-player-nextjs/)
+![app screenshot home](./preview-static-images/home)
+![app screenshot channel pg](./preview-static-images/channel)
+![app screenshot player](./preview-static-images/player)
+
+[live demo](https://podcast-player-nextjs.vercel.app/)
 
 ## Build using:
 

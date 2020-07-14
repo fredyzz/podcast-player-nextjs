@@ -36,12 +36,13 @@ const SeriesListItem = ({ serie }) => {
 				a.channel {
 					display: block;
 					margin-bottom: 0.5em;
-					color: #333;
+					color: white;
 					text-decoration: none;
 				}
 				.channel img {
-					border-radius: 3px;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					border-radius: 10px;
+					background: #222426;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 					width: 100%;
 				}
 			`}</style>

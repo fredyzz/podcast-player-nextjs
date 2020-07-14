@@ -26,7 +26,7 @@ const PodcastListItem = ({ audioClip, openPodcastModal }) => {
 				.podcast {
 					display: block;
 					text-decoration: none;
-					color: #333;
+					color: white;
 					padding: 15px;
 					border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 					cursor: pointer;

@@ -1,5 +1,7 @@
 # Podcast App using AudioBoom API
 
+[live demo](https://fredyzz.github.io/podcast-player-nextjs/)
+
 ## Build using:
 
 - React.js

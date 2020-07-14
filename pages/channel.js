@@ -24,10 +24,10 @@ const Channel = ({ channel, audioClips, series, statusCode }) => {
 	}
 
 	return (
-		<Layout title={`Podcast ${channel.title}`}>
+		<Layout title="Podcast">
 			<nav>
 				<Link href="/">
-					<a>Volver</a>
+					<a>&lt; Back</a>
 				</Link>
 			</nav>
 			<div
@@ -54,15 +54,16 @@ const Channel = ({ channel, audioClips, series, statusCode }) => {
 				nav {
 					position: absolute;
 					display: inline-block;
+					width: 40px;
 					border-radius: 25%;
-					background: #ffffff;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					background: #222426;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 					padding: 8px;
-					margin: 10px;
+					margin: -24px 0 0 30px;
 				}
 
 				nav a {
-					color: black;
+					color: white;
 					text-decoration: none;
 				}
 
@@ -71,14 +72,14 @@ const Channel = ({ channel, audioClips, series, statusCode }) => {
 					padding-bottom: 25%;
 					background-position: 50% 50%;
 					background-size: cover;
-					background-color: #aaa;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					background: #222426;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 				}
 
 				h1 {
+					color: white;
 					font-weight: 600;
-					text-shadow: 0 0 11px #ffffff;
-					background: rgba(255, 255, 255, 0.3);
+					text-shadow: 0 0 11px #222426;
 					padding: 5px;
 					text-align: center;
 				}

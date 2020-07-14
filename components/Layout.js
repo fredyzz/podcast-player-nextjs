@@ -25,17 +25,16 @@ const Layout = (props) => {
 
 			<style jsx>{`
 				header {
-					color: black;
 					text-transform: uppercase;
 					padding: 15px;
 					text-align: center;
 					font-weight: 600;
-					background: #ffffff;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					border-radius: 0 0 10px 10px;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 				}
 
 				header a {
-					color: black;
+					color: white;
 					text-decoration: none;
 				}
 			`}</style>
@@ -45,7 +44,8 @@ const Layout = (props) => {
 					body {
 						margin: 0;
 						font-family: system-ui;
-						background: white;
+						background: #222426;
+						color: white;
 					}
 
 					/* Make clicks pass-through */

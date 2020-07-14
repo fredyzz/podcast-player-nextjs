@@ -3,7 +3,7 @@ import PodcastListItem from './PodcastListItem'
 
 const PodcastList = ({ audioClips, openPodcastModal }) => {
 	return (
-		<>
+		<div className="podcastlist">
 			<h2>Ultimos podcast</h2>
 			{audioClips.map((audioClip, key) => (
 				<PodcastListItem
@@ -21,7 +21,12 @@ const PodcastList = ({ audioClips, openPodcastModal }) => {
 					margin: 20px auto 0px auto;
 					text-align: center;
 				}
-
+				.podcastlist {
+					background: #222426;
+					box-shadow: inset 7px 7px 14px #1b1c1e, inset -7px -7px 14px #292c2e;
+					padding-top: 5px;
+					border-radius: 20px 20px 0 0;
+				}
 				.podcast {
 					display: block;
 					text-decoration: none;
@@ -42,7 +47,7 @@ const PodcastList = ({ audioClips, openPodcastModal }) => {
 					font-size: 0.8em;
 				}
 			`}</style>
-		</>
+		</div>
 	)
 }
 

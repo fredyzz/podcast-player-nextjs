@@ -6,7 +6,7 @@ const PodcastPlayer = ({ audioClip, onClose }) => {
 		<div>
 			<nav>
 				{onClose ? (
-					<a onClick={onClose}>&lt; Volver</a>
+					<a onClick={onClose}>&lt; Back</a>
 				) : (
 					<Link
 						route="channel"
@@ -36,30 +36,34 @@ const PodcastPlayer = ({ audioClip, onClose }) => {
 				nav {
 					position: absolute;
 					display: inline-block;
+					width: 40px;
 					border-radius: 25%;
-					background: #ffffff;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					background: #222426;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 					padding: 8px;
-					margin: 10px;
+					margin: 15px;
 				}
 
 				nav a {
-					color: black;
+					color: white;
 					text-decoration: none;
+					cursor: pointer;
 				}
 
 				.cover {
 					width: 100vw;
 					height: 60vh;
 					text-align: center;
-					background: #ffffff;
+					background: #222426;
+					box-shadow: inset 7px 7px 14px #1b1c1e, inset -7px -7px 14px #292c2e;
 				}
 
 				.cover img {
 					max-height: 80%;
-					margin: 50px auto;
-					border-radius: 3px;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					max-width: 80%;
+					margin: 80px auto;
+					border-radius: 20px;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 				}
 
 				.info {
@@ -67,9 +71,8 @@ const PodcastPlayer = ({ audioClip, onClose }) => {
 					padding-top: 5vh;
 					padding-bottom: 40px;
 					text-align: center;
-					background: #ffffff;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-					color: black;
+					background: #222426;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 				}
 
 				h1 {
@@ -106,29 +109,8 @@ const PodcastPlayer = ({ audioClip, onClose }) => {
 					font-size: 0.8em;
 				}
 			`}</style>
-
-			<style jsx global>{`
-				body {
-					margin: 0;
-					font-family: system-ui;
-					background: #ffffff;
-				}
-			`}</style>
 		</div>
 	)
 }
-
-// Podcast.getInitialProps = async ({ query }) => {
-// 	let idAudioClip = query.id
-
-// 	// getting audio clip
-// 	let reqAudioClip = await fetch(
-// 		`https://api.audioboom.com/audio_clips/${idAudioClip}.mp3`
-// 	)
-// 	let dataAudioClip = await reqAudioClip.json()
-// 	let audioClip = dataAudioClip.body.audio_clip
-
-// 	return { audioClip }
-// }
 
 export default PodcastPlayer

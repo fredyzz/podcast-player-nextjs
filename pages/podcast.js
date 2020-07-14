@@ -1,6 +1,8 @@
 import { Link } from '../routes'
 import slug from '../helpers/slug'
 
+// *********!!!!! replaced with PodcastPlayer as a modal, to optimize the UX avoiding new API call
+
 const Podcast = ({ audioClip }) => {
 	return (
 		<div>
@@ -32,30 +34,34 @@ const Podcast = ({ audioClip }) => {
 				nav {
 					position: absolute;
 					display: inline-block;
+					width: 40px;
 					border-radius: 25%;
-					background: #ffffff;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					background: #222426;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 					padding: 8px;
-					margin: 10px;
+					margin: 15px;
 				}
 
 				nav a {
-					color: black;
+					color: white;
 					text-decoration: none;
+					cursor: pointer;
 				}
 
 				.cover {
 					width: 100vw;
 					height: 60vh;
 					text-align: center;
-					background: #ffffff;
+					background: #222426;
+					box-shadow: inset 7px 7px 14px #1b1c1e, inset -7px -7px 14px #292c2e;
 				}
 
 				.cover img {
 					max-height: 80%;
-					margin: 50px auto;
-					border-radius: 3px;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					max-width: 80%;
+					margin: 80px auto;
+					border-radius: 20px;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 				}
 
 				.info {
@@ -63,9 +69,8 @@ const Podcast = ({ audioClip }) => {
 					padding-top: 5vh;
 					padding-bottom: 40px;
 					text-align: center;
-					background: #ffffff;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-					color: black;
+					background: #222426;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 				}
 
 				h1 {
@@ -100,14 +105,6 @@ const Podcast = ({ audioClip }) => {
 					color: #666;
 					margin-top: 0.5em;
 					font-size: 0.8em;
-				}
-			`}</style>
-
-			<style jsx global>{`
-				body {
-					margin: 0;
-					font-family: system-ui;
-					background: #ffffff;
 				}
 			`}</style>
 		</div>

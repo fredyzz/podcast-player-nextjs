@@ -22,23 +22,23 @@ const ChannelGridItem = (props) => {
 			<style jsx>{`
 				.channel {
 					display: block;
-					border-radius: 3px;
-					background: #ffffff;
-					box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+					border-radius: 10px;
+					box-shadow: 7px 7px 14px #1b1c1e, -7px -7px 14px #292c2e;
 					margin-bottom: 0.5em;
 				}
 				a.channel {
 					display: block;
 					margin-bottom: 0.5em;
-					color: #333;
+					color: white;
 					text-decoration: none;
 				}
 				.channel img {
 					width: 100%;
-					border-radius: 3px;
+					border-radius: 10px;
 				}
 
 				h3 {
+					font-size: 12px;
 					padding: 5px;
 					text-align: center;
 				}

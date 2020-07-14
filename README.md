@@ -1,8 +1,8 @@
 # Podcast App using AudioBoom API
 
-![app screenshot home](./.preview-static-images/home.png)
-![app screenshot channel pg](./.preview-static-images/channel.png)
-![app screenshot player](./.preview-static-images/player.png)
+![app screenshot home](./.preview-static-images/home.png | width=100)
+![app screenshot channel pg](./.preview-static-images/channel.png | width=100)
+![app screenshot player](./.preview-static-images/player.png | width=100)
 
 [live demo](https://podcast-player-nextjs.vercel.app/)
 
